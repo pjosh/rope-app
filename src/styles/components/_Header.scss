@@ -1,0 +1,36 @@
+.c-header {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+
+  .c-header__title {
+    display: flex;
+    align-items: center;
+    height: $header-height;
+    font-size: $ff1-size-xl;
+    font-weight: $ff1-semibold;
+    color: $white;
+    white-space: nowrap;
+  }
+
+  .c-header__background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: $dark url('https://assets.crossfit.com/build/img/sites/games/backgrounds/regionals-rope-climbs.jpg') 0 0 no-repeat;
+    background-size: cover;
+    z-index: -1;
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba($black, 0.5);
+    }
+  }
+}
